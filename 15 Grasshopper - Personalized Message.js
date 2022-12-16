@@ -15,4 +15,4 @@ function greet(name, owner) {
   return "Hello guest";
 }
 
-console.log(' aqui eu quero escrever qualquer conteúdo para aparecer no debug do vs code')
+
