@@ -5,12 +5,12 @@
 // "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 
 function removeUrlAnchor(url) {
-  const position = url.indexOf("#");
-  const urlSize = url.length;
-  const numbersToRemove = urlSize - position;
+  const anchorIndex = url.indexOf("#");
+  const urlLength = url.length;
+  const charsToRemove = urlLength - anchorIndex;
 
-  if (position > -1) {
-    return url.slice(0, -numbersToRemove);
+  if (anchorIndex > -1) {
+    return url.slice(0, -charsToRemove);
   } else {
     return url;
   }
